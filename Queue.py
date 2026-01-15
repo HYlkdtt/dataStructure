@@ -10,6 +10,9 @@ class Queue:
     self.head = None
     self.tail = None
 
+  def __len__(self):
+    return self.length
+
   def printQueue(self):
     ptr = self.head
     while ptr:
